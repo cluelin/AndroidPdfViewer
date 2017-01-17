@@ -285,6 +285,26 @@ public class PDFView extends SurfaceView {
     /**
      * Construct the initial view
      */
+
+    Integer firstPageNumber;
+    Integer lastPageNumber;
+
+    public Integer getFirstPageNumber() {
+        return firstPageNumber;
+    }
+
+    public void setFirstPageNumber(Integer firstPageNumber) {
+        this.firstPageNumber = firstPageNumber;
+    }
+
+    public Integer getLastPageNumber() {
+        return lastPageNumber;
+    }
+
+    public void setLastPageNumber(Integer lastPageNumber) {
+        this.lastPageNumber = lastPageNumber;
+    }
+
     public PDFView(Context context, AttributeSet set) {
         super(context, set);
 
@@ -349,8 +369,23 @@ public class PDFView extends SurfaceView {
      * @param page Page number starting from 1.
      */
     public void jumpTo(int page) {
-        showPage(page - 1);
+        if (isPageInRange(page - 1, firstPageNumber, lastPageNumber ))
+            showPage(page - 1);
     }
+
+    boolean isPageInRange(int pageNb, int firstNb, int lastNb){
+
+        Log.d("태그", "pageNb, firstNb, lastNb : " + pageNb + " " + firstNb + " " + lastNb);
+        if (pageNb >= firstNb  && pageNb <= lastNb ){
+            Log.d("태그", "됨");
+            return true;
+        }
+        else{
+            Log.d("태그", "안됨");
+            return false;
+        }
+    }
+
 
     void showPage(int pageNb) {
         if (recycled) {
@@ -875,6 +910,13 @@ public class PDFView extends SurfaceView {
     private int determineValidPageNumberFrom(int userPage) {
         if (userPage <= 0) {
             return 0;
+        }
+
+        if (userPage <= firstPageNumber){
+            return firstPageNumber;
+        }
+        if (userPage >= lastPageNumber){
+            return lastPageNumber;
         }
         if (originalUserPages != null) {
             if (userPage >= originalUserPages.length) {

@@ -100,11 +100,14 @@ class DragPinchManager implements DragPinchListener.OnDragListener, DragPinchLis
                 long time = System.currentTimeMillis() - startDragTime;
                 int diff = distance > 0 ? -1 : +1;
 
+
                 if (isQuickMove(distance, time) || isPageChange(distance)) {
                     pdfView.showPage(pdfView.getCurrentPage() + diff);
                 } else {
                     pdfView.showPage(pdfView.getCurrentPage());
                 }
+
+
             }
         } else {
             pdfView.loadPages();
