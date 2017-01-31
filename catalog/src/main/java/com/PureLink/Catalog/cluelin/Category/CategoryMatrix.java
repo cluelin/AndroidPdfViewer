@@ -2,34 +2,23 @@ package com.PureLink.Catalog.cluelin.Category;
 
 import com.PureLink.Catalog.cluelin.R;
 
-import java.util.ArrayList;
-
 /**
  * Created by cluelin on 2016-12-21.
  */
 
 public class CategoryMatrix extends Category {
 
-    private ArrayList<String> subCategoryList = new ArrayList();
+    public static final CategoryMatrix CATEGORY_MATRIX = new CategoryMatrix();
 
-
-    public CategoryMatrix(){
+    private CategoryMatrix(){
 
         setCategoryName("Matrix");
 
         setPdfFileName(INDEX_SELECTION.MATRIXT);
 
-        makeSubCategoryList();
-        setSubCategoryNameList(subCategoryList);
-
+        makeSubCategoryNameList();
         makeIndexPageList();
-
-        getSubCategoryButtonImageArray().add(R.drawable.pm);
-        getSubCategoryButtonImageArray().add(R.drawable.sub_ux);
-        getSubCategoryButtonImageArray().add(R.drawable.sub_hx);
-        getSubCategoryButtonImageArray().add(R.drawable.sub_htx);
-        getSubCategoryButtonImageArray().add(R.drawable.sub_mxa);
-        getSubCategoryButtonImageArray().add(R.drawable.sub_mx);
+        makeSUbCategoryButtonList();
 
         setStartPage(5);
         setEndPage(24);
@@ -44,15 +33,24 @@ public class CategoryMatrix extends Category {
         getIndexPageList().add(24);
     }
 
-    private void makeSubCategoryList(){
-        subCategoryList.add("PM");
-        subCategoryList.add("UX");
-        subCategoryList.add("HX");
-        subCategoryList.add("HTX");
-        subCategoryList.add("MXA");
-        subCategoryList.add("MX");
+    private void makeSubCategoryNameList(){
+        getSubCategoryNameList().add("PM");
+        getSubCategoryNameList().add("UX");
+        getSubCategoryNameList().add("HX");
+        getSubCategoryNameList().add("HTX");
+        getSubCategoryNameList().add("MXA");
+        getSubCategoryNameList().add("MX");
 
 
+    }
+
+    private void makeSUbCategoryButtonList(){
+        getSubCategoryButtonImageArray().add(R.drawable.sub_pm);
+        getSubCategoryButtonImageArray().add(R.drawable.sub_ux);
+        getSubCategoryButtonImageArray().add(R.drawable.sub_hx);
+        getSubCategoryButtonImageArray().add(R.drawable.sub_htx);
+        getSubCategoryButtonImageArray().add(R.drawable.sub_mxa);
+        getSubCategoryButtonImageArray().add(R.drawable.sub_mx);
     }
 
 

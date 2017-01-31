@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Should be implements PDF Indexing work.
+//        CategoryMatrix.CATEGORY_MATRIX
+
     }
 
 
@@ -35,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         //send selected subCategory instance
         switch (view.getId()) {
             case R.id.indexButtonMatrix:
-                intent.putExtra(INDEX_SELECTION.PDF_NAME, new CategoryMatrix());
+                intent.putExtra(INDEX_SELECTION.PDF_NAME, CategoryMatrix.CATEGORY_MATRIX);
 
                 break;
             case R.id.indexButtonPresentation:

@@ -18,9 +18,8 @@
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="@drawable/edge"
+            android:background="@drawable/matrix"
             android:onClick="onClickContentsSelectButton"
-            android:text="Matrix"
             android:textSize="20dp" />
 
         <Button
@@ -29,9 +28,8 @@
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="@drawable/edge"
+            android:background="@drawable/presentation"
             android:onClick="onClickContentsSelectButton"
-            android:text="Presentation"
             android:textSize="20dp" />
     </LinearLayout>
 
@@ -47,9 +45,8 @@
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="@drawable/edge"
+            android:background="@drawable/extender"
             android:onClick="onClickContentsSelectButton"
-            android:text="Extender"
             android:textSize="20dp" />
 
         <Button
@@ -58,9 +55,8 @@
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="@drawable/edge"
+            android:background="@drawable/switcher"
             android:onClick="onClickContentsSelectButton"
-            android:text="switcher"
             android:textSize="20dp" />
     </LinearLayout>
 
@@ -76,9 +72,9 @@
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="@drawable/edge"
+            android:background="@drawable/converter"
             android:onClick="onClickContentsSelectButton"
-            android:text="converter"
+
             android:textSize="20dp" />
 
         <Button
@@ -87,9 +83,9 @@
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="@drawable/edge"
+            android:background="@drawable/cable"
             android:onClick="onClickContentsSelectButton"
-            android:text="cable"
+
             android:textSize="20dp" />
     </LinearLayout>
 
@@ -105,9 +101,9 @@
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="@drawable/edge"
+            android:background="@drawable/solution"
             android:onClick="onClickContentsSelectButton"
-            android:text="solution"
+
             android:textSize="20dp" />
 
         <Button
