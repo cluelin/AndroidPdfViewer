@@ -28,7 +28,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
     final int NO_SUBCATEGORY = 0;
 
     final int SUB_CATEGORY_WIDTH = LinearLayout.LayoutParams.MATCH_PARENT;
-    final int SUB_CATEGORY_HEIGHT = 80;
+    final int SUB_CATEGORY_HEIGHT = 150;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

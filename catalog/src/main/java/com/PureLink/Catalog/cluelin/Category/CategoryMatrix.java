@@ -45,12 +45,12 @@ public class CategoryMatrix extends Category {
     }
 
     private void makeSUbCategoryButtonList(){
-        getSubCategoryButtonImageArray().add(R.drawable.sub_pm);
-        getSubCategoryButtonImageArray().add(R.drawable.sub_ux);
-        getSubCategoryButtonImageArray().add(R.drawable.sub_hx);
-        getSubCategoryButtonImageArray().add(R.drawable.sub_htx);
-        getSubCategoryButtonImageArray().add(R.drawable.sub_mxa);
-        getSubCategoryButtonImageArray().add(R.drawable.sub_mx);
+        getSubCategoryButtonImageArray().add(R.drawable.sub_index_pm);
+        getSubCategoryButtonImageArray().add(R.drawable.sub_index_ux);
+        getSubCategoryButtonImageArray().add(R.drawable.sub_index_hx);
+        getSubCategoryButtonImageArray().add(R.drawable.sub_index_htx);
+        getSubCategoryButtonImageArray().add(R.drawable.sub_index_mxa);
+        getSubCategoryButtonImageArray().add(R.drawable.sub_index_mx);
     }
 
 
