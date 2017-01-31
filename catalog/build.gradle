@@ -26,7 +26,16 @@ android {
         versionName "1.0.2"
     }
 
-    sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/drawable/matrix'] } }
+    sourceSets {
+        main {
+            res.srcDirs = [
+
+                    'src/main/res/drawbles/main_image',
+                    'src/main/res/drawbles',
+                    'src/main/res'
+            ]
+        }
+    }
 }
 
 dependencies {
